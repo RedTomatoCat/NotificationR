@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">notification</string>
+    
+    <string name="notification_bt_name">Notification</string>
+    <string name="notification_custom_bt_name">Custom Notification</string>
+    <string name="safe_service_bt_name">Safe Service</string>
+    
+</resources>
