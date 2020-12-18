@@ -11,8 +11,8 @@ import androidx.annotation.IdRes
 interface NotificationRListener {
 
     fun onClick(action: String)
-    fun makeButtonsThing(): MutableList<ViewData>
+    fun makeButtonsThing(): MutableList<NotificationViewData>
 
-    class ViewData (@IdRes var id: Int = -1, var action: String = "")
+    class NotificationViewData (@IdRes var id: Int = -1, var action: String = "")
 
 }
