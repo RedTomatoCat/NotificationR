@@ -2,6 +2,12 @@
 
 Android Notifiction 全面SDK兼容，提供前台服务Notification隐藏Service
 
+### USE MAVEN
+
+```
+implementation 'com.redtomatocat.notificationr:NotificationR:1.0.0'
+```
+
 ### 核心类
 
 ```
