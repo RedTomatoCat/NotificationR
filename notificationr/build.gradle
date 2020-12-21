@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 28
@@ -13,6 +15,10 @@ android {
         versionName "1.0"
 
         consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    lintOptions{
+        abortOnError false
     }
 
     buildTypes {
@@ -28,5 +34,15 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.core:core-ktx:1.3.1'
 }
+
+publish {
+    userOrg = 'redtomatocat'
+    groupId = 'com.redtomatocat.notificationr'
+    artifactId = 'NotificationR'
+    publishVersion = '1.0.0'
+    desc = 'Android Notification'
+    website = 'https://github.com/RedTomatoCat/NotificationR'
+}
+

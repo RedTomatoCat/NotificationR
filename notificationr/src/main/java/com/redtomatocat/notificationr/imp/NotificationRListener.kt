@@ -1,6 +1,6 @@
 package com.redtomatocat.notificationr.imp
 
-import androidx.annotation.IdRes
+import com.redtomatocat.notificationr.bean.NotificationViewData
 
 /**
  * Create on 2020/12/12
@@ -12,7 +12,5 @@ interface NotificationRListener {
 
     fun onClick(action: String)
     fun makeButtonsThing(): MutableList<NotificationViewData>
-
-    class NotificationViewData (@IdRes var id: Int = -1, var action: String = "")
 
 }

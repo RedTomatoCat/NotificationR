@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.redtomatocat.notificationr.NotificationR
+import com.redtomatocat.notificationr.bean.NotificationViewData
 import com.redtomatocat.notificationr.imp.NotificationRListener
 
 /**
@@ -54,9 +55,9 @@ class MainActivity : AppCompatActivity() {
                                 }
                             }
 
-                            override fun makeButtonsThing(): MutableList<NotificationRListener.ViewData> = mutableListOf(
-                                    NotificationRListener.ViewData(R.id.pre_bt, "pre_bt"),
-                                    NotificationRListener.ViewData(R.id.next_bt, "next_bt"))
+                            override fun makeButtonsThing(): MutableList<NotificationViewData> = mutableListOf(
+                                    NotificationViewData(R.id.pre_bt, "pre_bt"),
+                                    NotificationViewData(R.id.next_bt, "next_bt"))
 
                         })
                         .build()

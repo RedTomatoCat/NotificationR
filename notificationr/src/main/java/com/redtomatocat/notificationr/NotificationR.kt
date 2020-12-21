@@ -126,8 +126,8 @@ class NotificationR private constructor(private val context: Context, private va
             listener?.let {
                 val viewDataList = it.makeButtonsThing()
                 for (viewData in viewDataList) {
-                    notificationLayout?.setOnClickPendingIntent(viewData.id, makePendingIntent(context, viewData.action))
-                    notificationLayoutExpanded?.setOnClickPendingIntent(viewData.id, makePendingIntent(context, viewData.action))
+                    notificationLayout?.setOnClickPendingIntent(viewData.bindViewId, makePendingIntent(context, viewData.action))
+                    notificationLayoutExpanded?.setOnClickPendingIntent(viewData.bindViewId, makePendingIntent(context, viewData.action))
                 }
             }
             listenerP = listener
