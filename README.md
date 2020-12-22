@@ -8,6 +8,13 @@ Android Notifiction 全面SDK兼容，提供前台服务Notification隐藏Servic
 implementation 'com.redtomatocat.notificationr:NotificationR:1.0.0'
 ```
 
+```
+NotificationR.Builder(this)
+                        .setTitle("Test")
+                        .setContentText("Text Content")
+                        .build().show(12121)
+```
+
 ### 核心类
 
 ```
